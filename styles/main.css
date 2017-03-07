@@ -1,0 +1,188 @@
+body{
+    background-color: rgb(211,211,211);
+}
+
+/* Start : Button text alignment classes */
+.textCenter{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.textBottom{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.textTop{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* End : Button text alignment classes */
+
+
+/* Start : Button styles */
+.styleShadedWrapper, .styleSharpWrapper, .styleFlatWrapper, .styleGradientWrapper, .styleGlassWrapper, .styleClassicWrapper, .styleImageWrapper, .styleHandDrawnWrapper{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 73px;
+    margin: 10px;
+    overflow: hidden;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.styleClassicWrapper{
+    border-radius: 0;
+}
+
+.styleImageWrapper{
+    border: none;
+}
+
+.btnTxt{
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+    .styleShadedBlock{
+        width: 100%;
+        overflow: hidden;
+        background: -webkit-radial-gradient(ellipse 100% 60%, rgba(255,255,255,1), rgba(50,50,50,1) 30%, rgba(50,50,50,1) 60%, rgba(255,255,255,1));
+        background: -o-radial-gradient(ellipse 100% 60%, rgba(255,255,255,1), rgba(50,50,50,1) 30%, rgba(50,50,50,1) 60%, rgba(255,255,255,1));
+        background: -moz-radial-gradient(ellipse 100% 60%, rgba(255,255,255,1), rgba(50,50,50,1) 30%, rgba(50,50,50,1) 60%, rgba(255,255,255,1));
+        background: radial-gradient(ellipse 100% 60%, rgba(255,255,255,1), rgba(50,50,50,1) 30%, rgba(50,50,50,1) 60%, rgba(255,255,255,1));
+        height: 220%;
+    }
+        .styleShadedHalfBlock{
+            background: rgba(255,0,0,1);
+            background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+            background: -o-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+            background: -moz-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+            background: linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+            height: 50%;
+            opacity: 0.7;
+        }
+
+.styleSharpBlock{
+    background: rgba(255,0,0,1);
+    background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -o-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -moz-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+    .styleSharpHalfBlock{
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+        .styleSharpInnerBlock{
+            opacity: 0.5;
+            width: 100%;
+            background: rgba(255,0,0,1);
+            background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(255,255,255,1), rgba(0,255,0,1));
+            background: -o-linear-gradient(rgba(255,0,0,1), rgba(255,255,255,1), rgba(0,255,0,1));
+            background: -moz-linear-gradient(rgba(255,0,0,1), rgba(255,255,255,1), rgba(0,255,0,1));
+            background: linear-gradient(rgba(255,0,0,1), rgba(255,255,255,1), rgba(0,255,0,1));
+            height: 350%;
+        }
+
+.styleFlatWrapper{
+    background: rgba(255,0,0,1);
+    background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -o-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -moz-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+}
+
+.styleClassicWrapper{
+    background: rgba(255,0,0,1);
+    background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -o-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -moz-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    border-top: solid 1px #fff;
+    border-left: solid 1px #fff;
+    border-bottom: solid 2px #43403B;
+    border-right: solid 2px #43403B;
+}
+    .styleClassicBlock{
+        border-top: solid 1px #fff;
+        border-left: solid 2px #fff;
+        border-bottom: solid 2px #81807B;
+        border-right: solid 2px #81807B;
+    }
+
+.styleGradientWrapper{
+    background: rgba(255,0,0,1);
+    background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -o-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -moz-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+}
+
+.styleGradientBlock{
+
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#ddd,rgba(0,0,0,0));
+    opacity: 0.5;
+}
+    .styleGradientHalfBlock{
+        background: rgba(255,0,0,1);
+        background: -webkit-linear-gradient(rgba(255,0,0,1) 0%, rgba(0,255,0,1) 0%);
+        background: -o-linear-gradient(rgba(255,0,0,1) 0%, rgba(0,255,0,1) 0%);
+        background: -moz-linear-gradient(rgba(255,0,0,1) 0%, rgba(0,255,0,1) 0%);
+        background: linear-gradient(rgba(255,0,0,1) 0%, rgba(0,255,0,1) 0%);
+        height: 90%;
+        opacity: 0.1;
+    }
+
+.styleGlassBlock{
+    background: rgba(255,0,0,1);
+    background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -o-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: -moz-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    background: linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+    .styleGlassHalfBlock{
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+        .styleGlassInnerBlock{
+            opacity: 0.5;
+            width: 100%;
+            background: rgba(255,0,0,1);
+            background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(255,255,255,1), rgba(0,255,0,1));
+            background: -o-linear-gradient(rgba(255,0,0,1), rgba(255,255,255,1), rgba(0,255,0,1));
+            background: -moz-linear-gradient(rgba(255,0,0,1), rgba(255,255,255,1), rgba(0,255,0,1));
+            background: linear-gradient(rgba(255, 255, 255, 1) 50%, rgba(255,0,0,1), rgba(255,255,255,1), rgba(0,255,0,1));
+            height: 350%;
+        }
+
+        .styleHandDrawnWrapper{
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            background: rgba(255,0,0,1);
+            background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+            background: -o-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+            background: -moz-linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+            background: linear-gradient(rgba(255,0,0,1), rgba(0,255,0,1));
+        }
+/* End : Button styles */
